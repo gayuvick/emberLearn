@@ -3,22 +3,22 @@ import { setupRenderingTest } from 'ember-quickstart/tests/helpers';
 import { render } from '@ember/test-helpers';
 import { hbs } from 'ember-cli-htmlbars';
 
-module('Integration | Component | people-list', function (hooks) {
+module('Integration | Component | share-button', function (hooks) {
   setupRenderingTest(hooks);
 
   test('it renders', async function (assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
 
-    await render(hbs`<PeopleList />`);
+    await render(hbs`<ShareButton />`);
 
     assert.dom().hasText('');
 
     // Template block usage:
     await render(hbs`
-      <PeopleList>
+      <ShareButton>
         template block text
-      </PeopleList>
+      </ShareButton>
     `);
 
     assert.dom().hasText('template block text');
